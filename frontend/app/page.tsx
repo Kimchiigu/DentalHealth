@@ -31,7 +31,7 @@ export default function Home() {
   ];
 
   return (
-    <AuroraBackground className="z-0">
+    <AuroraBackground className="">
       <div className="py-10 z-20 w-full flex flex-col items-center justify-center min-h-screen">
         <h1 className="font-bold text-2xl md:text-4xl">
           Welcome to DentalHealth!
