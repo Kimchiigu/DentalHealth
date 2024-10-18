@@ -37,7 +37,7 @@ export default function Home() {
           Welcome to DentalHealth!
         </h1>
         <h2 className="text-md md:text-lg mb-8">
-          Choose the type of the services!
+          Choose the type of the services that you want!
         </h2>
         <FocusCards cards={cards} />
       </div>
