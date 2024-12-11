@@ -12,6 +12,7 @@ import { AuroraBackground } from "@/components/ui/aurora-background";
 import { FocusCards } from "@/components/ui/focus-cards";
 
 export default function Home() {
+  
   const cards = [
     {
       title: "Doctor Consultation",
@@ -43,4 +44,5 @@ export default function Home() {
       </div>
     </AuroraBackground>
   );
+
 }
