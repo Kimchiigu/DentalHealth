@@ -4,6 +4,7 @@ import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 
 import Navbar from "@/components/pages/navbar";
+// import Footer from "@/components/pages/footer";
 
 import AnimatedCursor from "@/components/ui/custom-cursor";
 import { ThemeProvider } from '@/context/ThemeContext';
@@ -45,6 +46,7 @@ export default function RootLayout({
           <Navbar/>
           <ThemeToggleButton />
           <Toaster />
+          {/* <Footer/> */}
         </ThemeProvider>
 
       </body>

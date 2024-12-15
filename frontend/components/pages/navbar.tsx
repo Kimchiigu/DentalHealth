@@ -23,8 +23,20 @@ export default function FloatingNavDemo() {
     },
 
     {
+      name: "Consultation",
+      link: "/",
+      icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
+    },
+
+    {
       name: "Teeth Checking",
       link: "/teeth-checking",
+      icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
+    },
+
+    {
+      name: "Medical Knowledge",
+      link: "/article",
       icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     

@@ -66,10 +66,10 @@ export default function Home() {
 
       <AuroraBackground className="">
         <div className="py-10 z-20 w-full flex flex-col items-center justify-center min-h-screen">
-          <h1 className="font-bold text-2xl md:text-4xl">
+          <h1 className="font-bold text-2xl md:text-4xl dark:text-slate-50">
             ❤️‍🔥 DentalHealth Features ❤️‍🔥
           </h1>
-          <h2 className="text-md md:text-lg mb-8">
+          <h2 className="text-md md:text-lg mb-8 dark:text-slate-200">
             Choose the type of the services that you want!
           </h2>
           <FocusCards cards={cards} />

@@ -7,7 +7,10 @@ import { useToast } from "@/hooks/use-toast";
 import axios from "axios"; // Import axios for API calls
 import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
 
+import Footer from "@/components/pages/footer"
+
 export default function TeethChecking() {
+
   const [files, setFiles] = useState<File[]>([]);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [classification, setClassification] = useState<string | null>(null);
@@ -73,31 +76,42 @@ export default function TeethChecking() {
   }, [selectedImage]);
 
   return (
-    <div className="flex min-h-screen flex-row items-center justify-center">
-      <div className="flex flex-col min-h-screen items-center justify-center w-1/2">
-        <FileUpload onChange={handleFileUpload} />
+
+    <>
+
+      <div className="flex min-h-screen flex-row items-center justify-center">
+        <div className="flex flex-col min-h-screen items-center justify-center w-1/2">
+          <FileUpload onChange={handleFileUpload} />
+        </div>
+
+        {/* Preview Area */}
+        <div className="flex flex-col items-center justify-center w-1/2 bg-gray-100 min-h-[90vh] shadow-inner my-5 mx-5 rounded-xl">
+          <BackgroundBeamsWithCollision className="min-h-[90vh] rounded-xl z-0">
+            {selectedImage ? (
+              <div className="z-20">
+                <h1 className="mb-2">Image Preview:</h1>
+                <img
+                  src={selectedImage}
+                  alt="Preview"
+                  className="max-w-full max-h-96 rounded-xl shadow-xl"
+                />
+                {classification && (
+                  <p className="mt-4 text-xl text-gray-700">{classification}</p>
+                )}
+              </div>
+            ) : (
+              <h1>Image is empty :(</h1>
+            )}
+          </BackgroundBeamsWithCollision>
+        </div>
+
+        
+
       </div>
 
-      {/* Preview Area */}
-      <div className="flex flex-col items-center justify-center w-1/2 bg-gray-100 min-h-[90vh] shadow-inner my-5 mx-5 rounded-xl">
-        <BackgroundBeamsWithCollision className="min-h-[90vh] rounded-xl z-0">
-          {selectedImage ? (
-            <div className="z-20">
-              <h1 className="mb-2">Image Preview:</h1>
-              <img
-                src={selectedImage}
-                alt="Preview"
-                className="max-w-full max-h-96 rounded-xl shadow-xl"
-              />
-              {classification && (
-                <p className="mt-4 text-xl text-gray-700">{classification}</p>
-              )}
-            </div>
-          ) : (
-            <h1>Image is empty :(</h1>
-          )}
-        </BackgroundBeamsWithCollision>
-      </div>
-    </div>
+      <Footer/>
+
+    </>
+
   );
 }
