@@ -30,9 +30,9 @@ export default function AnimatedTestimonialsDemo() {
 
     {
         quote:
-          "This solution has significantly improved our team's productivity. The intuitive interface makes complex tasks simple.",
+          "I am the wisest man alive, for I know one thing, and that is that I know nothing.",
         name: "Stanley Nathanael Wijaya",
-        designation: "Operations Director at CloudScale",
+        designation: "Frontend Developer",
         src: "/assets/profile/stanz.png",
       },
 

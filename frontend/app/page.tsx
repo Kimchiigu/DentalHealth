@@ -16,7 +16,6 @@ import { HeroHighlight, Highlight } from "@/components/ui/hero-highlight";
 
 import { AuroraBackground } from "@/components/ui/aurora-background";
 import { FocusCards } from "@/components/ui/focus-cards";
-import BentoGrid from "@/components/pages/bento-grid";
 import WoobleCard from '@/components/pages/wooble-card';
 import Globe from  "@/components/pages/globe"
 import Footer from  "@/components/pages/footer"
