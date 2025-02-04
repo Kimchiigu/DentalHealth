@@ -1,12 +1,25 @@
+<h1 align="center"> DentalHealth </h1> <br>
+<p align="center">
+  <a href="">
+    <img alt="DentalHealth" title="DentalHealth" src="https://res.cloudinary.com/dxcn5osfu/image/upload/f_auto,q_auto/v1/DentalHealth/fvifsotbrscbknw64mgm" width="200">
+  </a>
+</p>
+
+<p align="center">
+  Computer Vision and Deep Learning for Dental Screening
+</p>
+
 # Artificial Intelligence: DentalHealth 🦷🪥
 
 This repository contains the AI Project Class of BINUS University with the Project Title "DentalHealth" 🔥🔥
 
 ## Table of Contents
 1. [Project Overview](#project-overview)
-2. [Prerequisite](#prerequisite)
-3. [How to Run Project Locally](#how-to-run-project-locally)
-4. [Owner](#owner)
+2. [Mockup Screenshot](#mockup-screenshot)
+3. [Web Demo](#web-demo)
+4. [Prerequisite](#prerequisite)
+5. [How to Run Project Locally](#how-to-run-project-locally)
+6. [Owner](#owner)
 
 ## Project Overview
 
@@ -16,6 +29,46 @@ DentalHealth
 ### Explanation
 
 DentalHealth is a perfect place to consult about your dental health for an affordable price! Not only that, we also provide advanced technology to help you understand your teeth better. Trusted by many, DentalHealth is here to assist you too! So what are you waiting for? Start using DentalHealth now! ❤️‍🔥✨
+
+## Mockup Screenshot
+
+* Home Page - Main Feature Selection
+
+<p align="center">
+  <img src = "https://res.cloudinary.com/dxcn5osfu/image/upload/f_auto,q_auto/v1/DentalHealth/xe2dixyvuw0ludqoh3zc" width=700>
+</p>
+
+* Chatbot Page
+
+<p align="center">
+  <img src = "https://res.cloudinary.com/dxcn5osfu/image/upload/f_auto,q_auto/v1/DentalHealth/fsjtmrxun4z2g7w0fl2g" width=700>
+</p>
+
+* Teeth Checking Page
+
+<p align="center">
+  <img src = "https://res.cloudinary.com/dxcn5osfu/image/upload/f_auto,q_auto/v1/DentalHealth/sjujnrrzhampna1hplke" width=700>
+</p>
+
+* Article Page
+
+<p align="center">
+  <img src = "https://res.cloudinary.com/dxcn5osfu/image/upload/f_auto,q_auto/v1/DentalHealth/yczw7gxrlxd4f7uzw5hk" width=700>
+</p>
+
+## Web Demo
+
+* Teeth Checking - Utilizing CNN Model
+
+<p align="center">
+  <img src = "https://res.cloudinary.com/dxcn5osfu/image/upload/f_auto,q_auto/v1/DentalHealth/rxk7uo4nq6bj4853qzq3" width=700>
+</p>
+
+* Chatbot - Powered by Deepseek R1:8b
+
+<p align="center">
+  <img src = "https://res.cloudinary.com/dxcn5osfu/image/upload/f_auto,q_auto/v1/DentalHealth/i1zatnvyy8akk0gcfjga" width=700>
+</p>
 
 ### Technology and Infrastructure
 
