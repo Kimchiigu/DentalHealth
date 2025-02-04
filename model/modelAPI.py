@@ -40,7 +40,7 @@ def load_model():
     model = CustomModel(num_classes)
     try:
         model.load_state_dict(torch.load("model_complete.pth", map_location=torch.device('cpu')), strict=False)
-        model.eval()  # Set model to evaluation mode
+        model.eval()
     except Exception as e:
         print(f"Error loading model: {e}")
     return model
@@ -50,7 +50,7 @@ model = load_model()
 
 # Define image transformations
 transform = transforms.Compose([
-    transforms.Resize((224, 224)),  # ResNet18 expects 224x224 input size
+    transforms.Resize((224, 224)),
     transforms.ToTensor(),
     transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
 ])
@@ -65,7 +65,7 @@ async def predict(file: UploadFile = File(...)):
         image = Image.open(file.file).convert("RGB")
         
         # Apply image transformations
-        image = transform(image).unsqueeze(0)  # Add batch dimension
+        image = transform(image).unsqueeze(0)
         
         # Make prediction
         with torch.no_grad():

@@ -57,7 +57,7 @@ export default function Chatbot({ onSubmitAnswer }: ChatbotProps) {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          model: "deepseek-r1:8b", // Replace with your model name if different
+          model: "deepseek-r1:1.5b", // Replace with your model name if different
           messages: [{ role: "user", content: inputValue }],
         }),
       });

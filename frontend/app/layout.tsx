@@ -7,7 +7,7 @@ import Navbar from "@/components/pages/navbar";
 // import Footer from "@/components/pages/footer";
 
 import AnimatedCursor from "@/components/ui/custom-cursor";
-import { ThemeProvider } from '@/context/ThemeContext';
+import { ThemeProvider } from "@/context/ThemeContext";
 import ThemeToggleButton from "@/components/ui/toggle";
 
 const geistSans = localFont({
@@ -25,6 +25,7 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "DentalHealth",
   description: "Keep your teeth healthy!",
+  icons: "/frontend/public/dental-health-logo.png",
 };
 
 export default function RootLayout({
@@ -33,25 +34,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-
     <html lang="en">
-
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
 
         <ThemeProvider>
-          <AnimatedCursor/>
-          <Navbar/>
+          <AnimatedCursor />
+          <Navbar />
           <ThemeToggleButton />
           <Toaster />
           {/* <Footer/> */}
         </ThemeProvider>
-
       </body>
-
     </html>
-
   );
 }
